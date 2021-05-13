@@ -90,12 +90,13 @@ Follow me on Twitter! [\@ChristophMolnar](https://twitter.com/ChristophMolnar)
 Cover by [\@YvonneDoinel](https://twitter.com/YvonneDoinel)
 
 **翻訳者について:** 
-株式会社HACARUSの有志のデータサイエンティスト、インターン学生が主導となって翻訳の取り組みが始まりました。
-ただし、本書の内容に関して、所属団体とは一切関係無いことをご了承お願いします。
+[株式会社HACARUS](https://hacarus.com/)の有志のデータサイエンティスト、インターン学生が主導となって翻訳の取り組みが始まりました。読みやすさの観点などから意訳を行った結果、原文との差異が生じている可能性があります。適宜、英語の原文 ([https://christophm.github.io/interpretable-ml-book/](https://christophm.github.io/interpretable-ml-book/)) を参照いただくようお願いいたします。
 
 本書は以下のリポジトリで管理されておりますので、誤字や誤訳を発見された方は Issue や　Pull Request よりご報告いただけると幸いです。詳しくはリポジトリ内の developer_guide.md をご覧ください。
 
-[https://github.com/hacarus/interpretable-ml-book-ja](https://github.com/hacarus/interpretable-ml-book-ja)
+[https://github.com/hacarus/interpretable-ml-book-ja/tree/japanese](https://github.com/hacarus/interpretable-ml-book-ja/tree/japanese)
+
+HACARUS は京都をベースにしたテックスタートアップです。最新の技術情報や会社の取り組みを [@HACARUSINC](https://twitter.com/HacarusInc)でも発信しておりますので、よろしければフォローください。
 
 
 `r if(is.html){"![クリエイティブ・コモンズ・ライセンス](images/by-nc-sa.png)"}`

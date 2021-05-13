@@ -13,5 +13,5 @@ issue の内容としては、以下を明記してください。
 ## Pull Request について
 
 web で公開されている和訳のバージョンは、`japanese` ブランチになっています。
-Pull Request を作る場合は、`japanese` ブランチから、`issue/issue番号/名前` という命名規則でブランチを切って作業を行い、Push した後、Pull Request を作成してください。
+Pull Request を作る場合は、`japanese` ブランチから、`issue/#{issue番号}/{名前}` という命名規則でブランチを切って作業を行い、Push した後、Pull Request を作成してください。
 ただし、Pull Request は `master` ブランチではなく、 `japanese` ブランチに対して送るようにしてください。
