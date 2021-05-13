@@ -96,7 +96,7 @@ Cover by [\@YvonneDoinel](https://twitter.com/YvonneDoinel)
 
 [https://github.com/hacarus/interpretable-ml-book-ja/tree/japanese](https://github.com/hacarus/interpretable-ml-book-ja/tree/japanese)
 
-HACARUS は京都をベースにしたテックスタートアップです。最新の技術情報や会社の取り組みを [@HACARUSINC](https://twitter.com/HacarusInc)でも発信しておりますので、よろしければフォローください。
+HACARUS は京都をベースにしたテックカンパニーです。最新の技術情報や会社の取り組みを [@HACARUSINC](https://twitter.com/HacarusInc) でも発信しておりますので、よろしければフォローください。
 
 
 `r if(is.html){"![クリエイティブ・コモンズ・ライセンス](images/by-nc-sa.png)"}`
