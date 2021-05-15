@@ -69,7 +69,7 @@ This feature was introduced to take account of the trend over time.
 	- 霧＋雲、霧＋所々曇り、霧＋少しの雲、小雨＋さざれ雲
 	- 豪雨＋凍雨＋雷雨＋霧、雪＋霧
 - 気温（摂氏）
-- 比較的温度（0 - 100％）
+- 相対湿度（0 - 100％）
 - 風速（km/h）
 
 <!--
