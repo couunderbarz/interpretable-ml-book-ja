@@ -240,6 +240,7 @@ An interpretable model can tell you why it has decided that a certain person sho
 - Trust: It is easier for humans to trust a system that explains its decisions compared to a black box.
 -->
 機械学習モデルが判断の根拠を説明できるようになれば、以下の特性も簡単に確かめることができます(Doshi-Velez and Kim 2017)。
+
 - 公平性: 予測に偏りがなく、保護されるグループに対して明示的または暗黙的に差別しない。解釈可能なモデルでは、ある人物が融資を受けるべきでないと決定した理由がわかり、その理由が学習した人口統計(人種など)の偏りに基づいているかどうかを人間が判断しやすくなります。
 - プライバシー: データ内の機密情報が保護されていること。
 - 信頼性または頑健性: 入力の小さな変化が予測に大きな変化をもたらさないこと。
