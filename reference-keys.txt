@@ -120,6 +120,7 @@ interpretability-importance
 properties
 explanation
 説明とはなにか
+good-explanation
 data
 bike-data
 spam-data

@@ -24,7 +24,7 @@
 <meta name="author" content="Christoph Molnar" />
 
 
-<meta name="date" content="2021-05-17" />
+<meta name="date" content="2021-05-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -134,6 +134,7 @@ window.cookieconsent.initialise({
 <li class="chapter" data-level="2.5" data-path="properties.html"><a href="properties.html"><i class="fa fa-check"></i><b>2.5</b> 説明に関する性質</a></li>
 <li class="chapter" data-level="2.6" data-path="explanation.html"><a href="explanation.html"><i class="fa fa-check"></i><b>2.6</b> 人間に優しい説明</a><ul>
 <li class="chapter" data-level="2.6.1" data-path="explanation.html"><a href="explanation.html#説明とはなにか"><i class="fa fa-check"></i><b>2.6.1</b> 説明とはなにか</a></li>
+<li class="chapter" data-level="2.6.2" data-path="explanation.html"><a href="explanation.html#good-explanation"><i class="fa fa-check"></i><b>2.6.2</b> よい説明とは何か?</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>3</b> データセット</a><ul>
@@ -430,7 +431,7 @@ Each counterfactual tells a different "story" of how a certain outcome was reach
 One counterfactual might say to change feature A, the other counterfactual might say to leave A the same but change feature B, which is a contradiction.
 This issue of multiple truths can be addressed either by reporting all counterfactual explanations or by having a criterion to evaluate counterfactuals and select the best one.
 -->
-<p>反事実は現在のインスタンスとは対照的であり、また選択的である、すなわち通常は少ない特徴量の変化に焦点をあてるため、<a href="#good-explanation">人間に優しい説明</a>です。 しかし反事実は「羅生門効果」の影響を大きく受けます。 羅生門とは侍の殺人事件が複数人の視点から語られる日本の映画のことです。 それぞれの話は結果を等しく説明しますが、それらは互いには全く異なっているのです。 たいていは、複数の異なった反事実的説明が存在するため、同じことが反事実的説明にも言えます。 それぞれの反事実は、どのように特定の結果に到達するかの異なる「ストーリー」を語っています。 ある反事実は特徴量 A を変化させると言い、一方で、他の反事実は特徴量 A はそのままで、特徴量 B を変化させると言うかもしれませんが、これは矛盾しています。 この複数の真実が存在する問題は、全ての反事実を報告するか、反事実を評価する基準を持ち最良のものを選ぶかによって解決できます。</p>
+<p>反事実は現在のインスタンスとは対照的であり、また選択的である、すなわち通常は少ない特徴量の変化に焦点をあてるため、<a href="explanation.html#good-explanation">人間に優しい説明</a>です。 しかし反事実は「羅生門効果」の影響を大きく受けます。 羅生門とは侍の殺人事件が複数人の視点から語られる日本の映画のことです。 それぞれの話は結果を等しく説明しますが、それらは互いには全く異なっているのです。 たいていは、複数の異なった反事実的説明が存在するため、同じことが反事実的説明にも言えます。 それぞれの反事実は、どのように特定の結果に到達するかの異なる「ストーリー」を語っています。 ある反事実は特徴量 A を変化させると言い、一方で、他の反事実は特徴量 A はそのままで、特徴量 B を変化させると言うかもしれませんが、これは矛盾しています。 この複数の真実が存在する問題は、全ての反事実を報告するか、反事実を評価する基準を持ち最良のものを選ぶかによって解決できます。</p>
 <!--
 Speaking of criteria, how do we define a good counterfactual explanation?
 First, the user of a counterfactual explanation defines a relevant change in the prediction of an instance (= the alternative reality), so an obvious first requirement is that **a counterfactual instance produces the predefined prediction as closely as possible**.

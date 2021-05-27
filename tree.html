@@ -24,7 +24,7 @@
 <meta name="author" content="Christoph Molnar" />
 
 
-<meta name="date" content="2021-05-17" />
+<meta name="date" content="2021-05-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -134,6 +134,7 @@ window.cookieconsent.initialise({
 <li class="chapter" data-level="2.5" data-path="properties.html"><a href="properties.html"><i class="fa fa-check"></i><b>2.5</b> 説明に関する性質</a></li>
 <li class="chapter" data-level="2.6" data-path="explanation.html"><a href="explanation.html"><i class="fa fa-check"></i><b>2.6</b> 人間に優しい説明</a><ul>
 <li class="chapter" data-level="2.6.1" data-path="explanation.html"><a href="explanation.html#説明とはなにか"><i class="fa fa-check"></i><b>2.6.1</b> 説明とはなにか</a></li>
+<li class="chapter" data-level="2.6.2" data-path="explanation.html"><a href="explanation.html#good-explanation"><i class="fa fa-check"></i><b>2.6.2</b> よい説明とは何か?</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>3</b> データセット</a><ul>
@@ -526,7 +527,7 @@ A tree with a depth of three requires a maximum of three features and split poin
 The truthfulness of the prediction depends on the predictive performance of the tree.
 The explanations for short trees are very simple and general, because for each split the instance falls into either one or the other leaf, and binary decisions are easy to understand.
 -->
-<p>決定木は<a href="#good-explanation">&quot;人間に優しい説明&quot;の章</a>で定義されているように、<strong>よい説明</strong>を与えることができます。 決定木の構造は、自動的に個々のインスタンスに対して反事実的に予測値を考えるように誘導します。 つまり、「この特徴量が分岐点より、大きい(小さい)なら、予測値は y2 ではなくて y1 であったのに。」というようになります。 決定木の説明は対照的です。なぜなら、いつでも予測値と、決定木によって定められた&quot;what if&quot;シナリオ(他のノードの葉)と比べられるからです。 もし、木の深さが1から3のように短かったら、最終的な説明は選択的です。 深さが 3 の決定木は、個々のインスタンスの予測の説明を得るために、最大3つの特徴量と分岐点を必要とします。 予測値の真実性は、決定木の予測性能に依存します。 短い木の説明は非常に単純かつ一般的です。なぜなら、それぞれの分岐において、インスタンスは左右いずれかのノードに分かれていくので、このような二者択一は理解しやすいからです。</p>
+<p>決定木は<a href="explanation.html#good-explanation">&quot;人間に優しい説明&quot;の章</a>で定義されているように、<strong>よい説明</strong>を与えることができます。 決定木の構造は、自動的に個々のインスタンスに対して反事実的に予測値を考えるように誘導します。 つまり、「この特徴量が分岐点より、大きい(小さい)なら、予測値は y2 ではなくて y1 であったのに。」というようになります。 決定木の説明は対照的です。なぜなら、いつでも予測値と、決定木によって定められた&quot;what if&quot;シナリオ(他のノードの葉)と比べられるからです。 もし、木の深さが1から3のように短かったら、最終的な説明は選択的です。 深さが 3 の決定木は、個々のインスタンスの予測の説明を得るために、最大3つの特徴量と分岐点を必要とします。 予測値の真実性は、決定木の予測性能に依存します。 短い木の説明は非常に単純かつ一般的です。なぜなら、それぞれの分岐において、インスタンスは左右いずれかのノードに分かれていくので、このような二者択一は理解しやすいからです。</p>
 <!--
 There is no need to transform features. 
 In linear models, it is sometimes necessary to take the logarithm of a feature. 
