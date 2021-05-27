@@ -687,7 +687,7 @@ This property is important to consider when computation time is a bottleneck in 
 - **透光性 (Translucency)**は、その手法がどの程度モデルのパラメータなどを参照しているかを表します。
 説明手法が、線形回帰モデルのような本質的に解釈可能なモデルに対する特有の方法であるとき、透光性が高いと言えます。逆に、説明がモデルへの入力と出力の変化のみに基づいている場合、その説明手法は透光性がないといえます。
 状況によって、求められる透光性のレベルは異なります。
-高い透光性のメリットは、より多くの乗法をもとに説明を生成することが可能になる一方で、低い透光性のメリットは、モデルの種類にかかわらず、その説明手法を適用することが可能になることです。
+高い透光性のメリットは、より多くの情報をもとに説明を生成することが可能になる一方で、低い透光性のメリットは、モデルの種類にかかわらず、その説明手法を適用することが可能になることです。
 - **汎用性 (Portability)**は、説明手法が適用可能なモデルの範囲を表します。
 透光性の低い説明手法はモデルをブラックボックスのように扱うため、汎用性が高くなります。サロゲートモデルは説明手法の中でもかなり高い汎用性があり、一方で、再帰型ニューラルネットワークなど特定のモデルにのみ適用できる手法は汎用性は低いと言えます。
 - **アルゴリズムの複雑さ (Algorithmic Complexity)**はモデルの説明を計算する際の計算量を表します。これは説明の生成の計算時間がボトルネックになるような場合に重要な性質となります。
@@ -755,7 +755,7 @@ Explanations can cover the entire model (e.g. interpretation of weights in a lin
 安定性の欠如は、[local surrogate method](#lime)で使われているようなデータをサンプリングするステップなどの、非決定性（ランダム性）に基づく説明の手法によって起こされます。
 高い安定性は常に求められています。
 - **理解のしやすさ (Comprehensibility)**：説明が人間にとってどの程度理解可能か？
-この指標は多くの指標の中の1つに思えますが、定義や計算することが困難でありながら、正しく求めることが極めて重要であるという点で、非常に面倒な指標です。理解のしやすさは、長袖に依存するという点は多くの人が同意するところでしょう。
+この指標は多くの指標の中の1つに思えますが、定義や計算することが困難でありながら、正しく求めることが極めて重要であるという点で、非常に面倒な指標です。理解のしやすさは、聴衆に依存するという点は多くの人が同意するところでしょう。
 理解のしやすさを測る方法として、説明のサイズ（線形モデルでの非ゼロの重みの数、決定規則の数など）を測る方法や、説明からモデルの振る舞いをどの程度予測できるかを測る方法などが考えられます。また、説明で使用されている特徴量の理解度も考慮する必要があります。
 特徴量に複雑な変換を施してしまうと、元の特徴量よりも理解が難しくなってしまいます。
 - **確信度 (Certainty)**：モデルの確信度がどの程度説明に反映されているか？
@@ -780,7 +780,7 @@ Humanities research can help us find out. -->
 それには人文科学が参考になるでしょう。
 
 <!-- Miller (2017) has conducted a huge survey of publications on explanations, and this chapter builds on his summary. -->
-Miller(2017) は、{explanations}についての出版物に対して、膨大な調査をしました。この章はその要約に基づいています。
+Miller(2017) は、説明についての出版物に対して、膨大な調査をしました。この章はその要約に基づいています。
 
 <!-- In this chapter, I want to convince you of the following:
 As an explanation for an event, humans prefer short explanations (only 1 or 2 causes) that contrast the current situation with a situation in which the event would not have occurred.
@@ -833,7 +833,7 @@ The explainer can be a human being or a machine. -->
 説明をする人は、人間の場合も機械の場合もありえます。
 
 <!-- ### What Is a Good Explanation? {#good-explanation} -->
-<!-- ### よい説明とは何か? {#good-explanation} -->
+### よい説明とは何か? {#good-explanation}
 
 <!-- This section further condenses Miller's summary on "good" explanations and adds concrete implications for interpretable machine learning. -->
 このセクションでは、「良い」説明に関する Miller の要約をさらに凝縮し、解釈可能な機械学習に対する具体的な意味を付け加えます。
