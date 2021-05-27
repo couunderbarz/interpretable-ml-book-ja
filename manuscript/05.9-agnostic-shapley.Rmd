@@ -32,12 +32,12 @@ The apartment has a size of 50 m^2^, is located on the 2nd floor, has a park nea
 -->
 あなたは、アパートの価格を予測するための機械学習モデルを学習しました。
 あるアパートは €300,000 と予測されており、この予測を説明する必要があります。
-そのアパートの広さは 50m^2^ で、二階にあり、近くに駐車場があり、猫を飼うことは禁止されています。
+そのアパートの広さは 50m^2^ で、二階にあり、近くに公園があり、猫を飼うことは禁止されています。
 
 <!--
 fig.cap = "The predicted price for a 50 m^2^ 2nd floor apartment with a nearby park and cat ban is €300,000. Our goal is to explain how each of these feature values contributed to the prediction."
 -->
-```{r shapley-instance, fig.cap = "駐車場が近く猫が禁止されている 50m^2^ の二階のアパートの予測価格は €300,000。目的は、これらの特徴量がそれぞれどのように予測値に寄与したのかを説明すること。", out.width=500}
+```{r shapley-instance, fig.cap = "公園が近く猫が禁止されている 50m^2^ の二階のアパートの予測価格は €300,000。目的は、これらの特徴量がそれぞれどのように予測値に寄与したのかを説明すること。", out.width=500}
 knitr::include_graphics("images/shapley-instance.png")
 ```
 
