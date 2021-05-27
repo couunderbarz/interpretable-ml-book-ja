@@ -404,7 +404,8 @@ The problem with the weight plot is that the features are measured on different 
 While for the weather the estimated weight reflects the difference between good and rainy/stormy/snowy weather, for temperature it only reflects an increase of 1 degree Celsius.
 You can make the estimated weights more comparable by scaling the features (zero mean and standard deviation of one) before fitting the linear model.-->
 重みプロットは、自転車のレンタル台数を予測するにあたって、雨、雪、嵐といった天気は大きな負の影響を及ぼすことを示しています。
-稼働日数の重みはほぼ 0 になっており、かつ 95% 信頼区間に 0 は含まれています。従って、この特徴量は統計的に重要でないことが示されます。
+仕事日の重みはほぼ 0 になっており、かつ 95% 信頼区間に 0 は含まれています。従って、この特徴量は統計的に重要でないことが示されます。
+信頼区間が非常に短く推定値は 0 に近くとも、対応する特徴量の効果が統計的に有意な場合がありました。
 気温についても同様のことが言える可能性があります。
 重みプロットにおける問題は、各特徴量が異なるスケールで計測されているということです。
 天気の推定された重みは晴れ、雨、嵐、雪のそれぞれの天気の違いを反映していますが、気温は 1 度の変化による影響を反映しています。
