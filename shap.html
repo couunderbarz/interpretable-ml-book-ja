@@ -24,7 +24,7 @@
 <meta name="author" content="Christoph Molnar" />
 
 
-<meta name="date" content="2021-05-27" />
+<meta name="date" content="2021-05-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -556,7 +556,7 @@ If a coalition consists of all but one feature, we can learn about this features
 If a coalition consists of half the features, we learn little about an individual features contribution, as there are many possible coalitions with half of the features.
 To achieve Shapley compliant weighting, Lundberg et. al propose the SHAP kernel:
 -->
-<p>LIME との大きな違いは回帰モデルの中のインスタンスの重みです。 LIME は、元のインスタンスにどのくらい近いかによってインスタンスの重みを決定します。 連合ベクトルの中の 0 が多いほど、LIME の重みは小さくなります。 SHAP は、連合がシャープレイ値の推定で得るであろう重みに従って、サンプリングされたインスタンスに重み付けをします。 小さな連合（1が少ない）と大きな連合（1が多い）が最も大きな重みをとります。 この理由は以下の通りです。 もし個々の特徴量の影響を個別に調べることができるのであれば、個々の特徴量のほとんどを知ることになります。 もし連合が単一の特徴量で構成されている場合、予測に対する特徴量の個々の主な影響を知ることができます。 もし連合が1つを除いたすべての特徴量を基に構成されているなら、特徴量の全体効果(主要な効果+特徴量の相互作用)を知ることができます。 もし連合が特徴量の半分で構成されている場合、半分の特徴量となりうる連合が多くあるため、個々の特徴量についてほどんど知ることができません。 シャープレイ準拠の重みを達成するために、Lundbergらは、SHAP カーネルを提案しました。</p>
+<p>LIME との大きな違いは回帰モデルの中のインスタンスの重みです。 LIME は、元のインスタンスにどのくらい近いかによってインスタンスの重みを決定します。 連合ベクトルの中の 0 が多いほど、LIME の重みは小さくなります。 SHAP は、連合がシャープレイ値の推定で得るであろう重みに従って、サンプリングされたインスタンスに重み付けをします。 小さな連合（1が少ない）と大きな連合（1が多い）が最も大きな重みをとります。 この理由は以下の通りです。 もし個々の特徴量の影響を個別に調べることができるのであれば、個々の特徴量のほとんどを知ることになります。 もし連合が単一の特徴量で構成されている場合、予測に対する特徴量の個々の主な影響を知ることができます。 もし連合が1つを除いたすべての特徴量を基に構成されているなら、特徴量の全体効果(主要な効果+特徴量の相互作用)を知ることができます。 もし連合が特徴量の半分で構成されている場合、半分の特徴量となりうる連合が多くあるため、個々の特徴量についてほとんど知ることができません。 シャープレイ準拠の重みを達成するために、Lundbergらは、SHAP カーネルを提案しました。</p>
 <p><span class="math display">\[\pi_{x}(z&#39;)=\frac{(M-1)}{\binom{M}{|z&#39;|}|z&#39;|(M-|z&#39;|)}\]</span></p>
 <!--
 Here, M is the maximum coalition size and $|z'|$ the number of present features in instance z'.
