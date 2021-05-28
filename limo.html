@@ -906,14 +906,14 @@ This is usually an artificial, meaningless instance that is unlikely to occur in
 There is an exception:
 If all numerical features are mean centered (feature minus mean of feature) and all categorical features are effect coded, the reference instance is the data point where all the features take on the mean feature value.
 This might also be a non-existent data point, but it might at least be more likely or more meaningful.
--->
-<p>例外もあります： すべての量的特徴量が平均化（特徴量から特徴量の平均値を引いた値）されており、すべてのカテゴリ特徴量がエンコードされている場合、参照インスタンスは、すべての特徴量が平均値を取るデータ点となります。 これは実在しないデータ点かもしれませんが、少なくとも可能性が高く意味があるものかもしれません。</p>
-<!--
 In this case, the weights times the feature values (feature effects) explain the contribution to the predicted outcome contrastive to the "mean-instance".
+-->
+<p>例外もあります： すべての量的特徴量が中心化（特徴量から特徴量の平均値を引いた値）されており、すべてのカテゴリ特徴量がエンコードされている場合、参照インスタンスは、すべての特徴量が平均値を取るデータ点となります。 これは実在しないデータ点かもしれませんが、少なくとも可能性が高く意味があるものかもしれません。 この場合、特徴量に重みを掛けたもの（feature effects）は、&quot;平均的なインスタンス&quot;と比較したときの予測結果への貢献度を説明しています。</p>
+<!--
 Another aspect of a good explanation is selectivity, which can be achieved in linear models by using less features or by training sparse linear models.
 But by default, linear models do not create selective explanations.
 -->
-<p>この場合、特徴量に重みを掛けたもの（feature effects）は、&quot;平均的なインスタンス&quot;と比較したときの予測結果への貢献度を説明しています。 良い説明のもう1つの側面は選択性であり、線形モデルにはおいては、より少ない特徴量を使うこと、もしくはスパースな線形モデルを用いることが挙げられます。 線形モデル自体では選択性を持つ説明は達成できないことに注意してください。</p>
+<p>良い説明のもう1つの側面は選択性であり、線形モデルにはおいては、より少ない特徴量を使うこと、もしくはスパースな線形モデルを用いることが挙げられます。 線形モデル自体では選択性を持つ説明は達成できないことに注意してください。</p>
 <!--
 Linear models create truthful explanations, as long as the linear equation is an appropriate model for the relationship between features and outcome.
 The more non-linearities and interactions there are, the less accurate the linear model will be and the less truthful the explanations become.
