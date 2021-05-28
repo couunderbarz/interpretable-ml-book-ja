@@ -373,7 +373,7 @@ The Shapley value is a solution for computing feature contributions for single p
 <!--
 The Shapley value is defined via a value function val of players in S.
 -->
-シャープレイ値は S の中のプレイヤーの値の関数 val と定義されます。
+シャープレイ値は、S の中のプレイヤーの値関数 val を用いて定義されます。
 
 <!--
 The Shapley value of a feature value is its contribution to the payout, weighted and summed over all possible feature value combinations:
@@ -597,9 +597,9 @@ The Shapley value might be the only method to deliver a full explanation.
 In situations where the law requires explainability -- like EU's "right to explanations" -- the Shapley value might be the only legally compliant method, because it is based on a solid theory and distributes the effects fairly.
 I am not a lawyer, so this reflects only my intuition about the requirements.
 -->
-予測と予測の平均の差分は、シャープレイ値の効率性という性質から、インスタンスの特徴量間で**公平に分散**されます。
+予測と予測の平均の差分は、シャープレイ値の効率性という性質から、インスタンスの特徴量間で**公平に分配**されます。
 この性質により、シャープレイ値は [LIME](#lime) などの他の手法と区別されます。
-LIME は予測が特徴量間で公平に分散されることを保証しません。
+LIME は予測が特徴量間で公平に分配されることを保証しません。
 EU の「説明を求める権利」のように、法が説明を求める状況下において、シャープレイ値は確かな理論に基づき、予測を公平に分配しているため、法に準拠した唯一の手法であるかもしれません。
 ただし、筆者は法律家ではないので、これは法の要請に対する著者の直感でしかありません。
 
