@@ -451,7 +451,7 @@ For example, the logistic regression model assumes a Bernoulli distribution for 
 -->
 <div id="glm" class="section level3">
 <h3><span class="header-section-number">4.3.1</span> 結果が正規分布に従わない場合 - GLMs</h3>
-<p>線形回帰モデルは、特徴量が与えられたときの結果は正規分布に従うと仮定としています。 しかし、この仮定が成り立たない場合は多くあります。 結果は、カテゴリ (がん or 健康)、整数 (子供の数)、出来事が起こるまでの時間 (機械が故障するまでの時間)、少数のとても大きな数が存在する偏った出力 (世帯収入) などがあります。 実は、線形回帰モデルはこれらすべてのタイプに拡張できます。 この拡張は<strong>一般化線形モデル (Generalized Linear Models)</strong>もしくは省略して<strong>GLMs</strong>と呼ばれます。 この章では、GLMという用語を一般的なフレームワークとこのフレームワークに由来する特定のモデル、両方を表す際に使います。 GLM のコアとなる概念は、「特徴量の重み付き和を保持するが、結果の分布の非正規性を許容し、この分布の平均と重み付き和をある非線型関数で関連づけること」です。 例えば、ロジスティック回帰モデルでは結果が二項分布 (Bernoulli distribution) に従うことを仮定しており、ロジスティック関数を通して分布の平均と重み付き和が関連付けられています。</p>
+<p>線形回帰モデルは、特徴量が与えられたときの結果は正規分布に従うと仮定としています。 しかし、この仮定が成り立たない場合は多くあります。 結果は、カテゴリ (がん or 健康)、計数 (子供の数)、出来事が起こるまでの時間 (機械が故障するまでの時間)、少数のとても大きな数が存在する偏った出力 (世帯収入) などがあります。 実は、線形回帰モデルはこれらすべてのタイプに拡張できます。 この拡張は<strong>一般化線形モデル (Generalized Linear Models)</strong>もしくは省略して<strong>GLMs</strong>と呼ばれます。 この章では、GLMという用語を一般的なフレームワークとこのフレームワークに由来する特定のモデル、両方を表す際に使います。 GLM のコアとなる概念は、「特徴量の重み付き和を保持するが、結果の分布の非正規性を許容し、この分布の平均と重み付き和をある非線型関数で関連づけること」です。 例えば、ロジスティック回帰モデルでは結果が二項分布 (Bernoulli distribution) に従うことを仮定しており、ロジスティック関数を通して分布の平均と重み付き和が関連付けられています。</p>
 <!--
 The GLM mathematically links the weighted sum of the features with the mean value of the assumed distribution using the link function g, which can be chosen flexibly depending on the type of outcome. 
 -->
